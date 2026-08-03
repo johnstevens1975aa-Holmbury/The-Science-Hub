@@ -26,8 +26,55 @@
 .rag-table{width:100%;border-collapse:collapse} .rag-table th,.rag-table td{border-bottom:1px solid rgba(255,255,255,.1);padding:10px;text-align:left} .rag-btn{width:22px;height:22px;border-radius:50%;border:0;cursor:pointer;margin:0 4px} .r{background:#dc2626} .a{background:#f59e0b} .g{background:#16a34a}
 footer{color:#777;text-align:center;border-top:1px solid rgba(255,255,255,.08);margin-top:38px;padding:22px}
 </style>
+
+<!-- Landing page return link added by Copilot -->
+<style id="landing-return-link-style">
+  .landing-return-link {
+    position: fixed;
+    top: 16px;
+    right: 18px;
+    z-index: 999999;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 11px 15px;
+    border-radius: 999px;
+    border: 1px solid rgba(212,175,55,.55);
+    background: linear-gradient(135deg, rgba(8,12,22,.92), rgba(31,24,8,.92));
+    color: #f8e7a1;
+    text-decoration: none;
+    font-weight: 800;
+    font-family: Inter, Segoe UI, Arial, sans-serif;
+    font-size: 0.88rem;
+    letter-spacing: .01em;
+    box-shadow: 0 12px 28px rgba(0,0,0,.38), inset 0 1px 0 rgba(255,255,255,.08);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+  }
+  .landing-return-link:hover {
+    transform: translateY(-1px);
+    border-color: rgba(255,215,120,.85);
+    background: linear-gradient(135deg, rgba(18,24,38,.98), rgba(70,47,8,.98));
+    color: #fff7d6;
+  }
+  .landing-return-link:focus-visible {
+    outline: 3px solid rgba(248,231,161,.55);
+    outline-offset: 3px;
+  }
+  @media (max-width: 720px) {
+    .landing-return-link {
+      top: auto;
+      right: 12px;
+      bottom: 14px;
+      padding: 10px 13px;
+      font-size: .82rem;
+    }
+  }
+</style>
 </head>
 <body>
+<a class="landing-return-link" href="index.html" aria-label="Return to the main subject landing page">← Subject Gateway</a>
+
 <button id="menu" onclick="document.querySelector('aside').classList.toggle('open')">☰</button>
 <div id="app">
 <aside>
